@@ -1,0 +1,146 @@
+.header-wrapper{
+    background-color: var(--background-text-color);
+    border-bottom: 1px solid var(--border-solid-colot);
+    }
+       
+.logo-header{   
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--link-text-color);
+    text-decoration: none;
+    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 93px;
+    &__studio{
+        color: var(--header-text-color);
+    }
+    }
+        /* СТИЛИ НАВИГАЦИИ */
+.nav-nav{
+        display: flex;
+        align-items: center;
+    }
+    
+.nav-list{
+        display: flex;
+        padding-left: 0;
+        margin: 0; 
+        
+        
+        &__item{
+            list-style-type: none;
+            margin-right: 50px;
+            }
+            &__item:last-child{
+                margin-right: 0;
+            }
+            &__link{
+                position: relative;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            color: var(--header-text-color);
+            text-decoration: none;
+            
+            padding-top: 32px;
+            padding-bottom: 32px;
+            
+            transition-property: var(--link-text-color), transform;
+            transition-duration: 250ms;
+            transition-timing-function: var(--timing-function);
+            }
+            &__link:hover,
+            &__link:focus{
+        color: var(--link-text-color);
+    }
+    &__link--current{
+        color: var(--link-text-color);
+    }   
+    &__link--current::after{
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border-radius: 2px;
+        background-color: var(--link-text-color);
+    }
+
+    }
+    /* СТИЛИ КОНТАКТОВ В HEADER */
+
+.contact-list{
+    display: flex;
+    padding: 0;
+    margin-left: 305px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__item{
+        list-style: none;
+    }
+    &__link{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        color: var(--primary-text-color);
+        text-decoration: none;
+        
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+        transition-property: var(--link-text-color), transform;
+        transition-duration: 250ms;
+        transition-timing-function: var(--timing-function);
+        }
+        &__link--mail{
+            margin-right: 30px;
+        }
+        &__link:hover,
+        &__link:focus{
+        color: var(--link-text-color);
+}
+&__icon{
+    margin-right: 10px;
+    fill: currentColor;
+}
+&__icon:hover,
+&__icon:focus{
+color: var(--link-text-color);
+}
+}
+
+
+
+
+
+
+
+
+
+
+/* СТИЛИ КОНТАКТОВ В HEADER */
+
+/* STYLES HEADER */
+
+    
+ 
+    
+   
+    
+    
+    
+   
+    
+   
