@@ -1,27 +1,43 @@
 .header-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    display: block;
     background-color: var(--background-text-color);
     border-bottom: 1px solid var(--border-solid-colot);
     }
        
-.logo-header{   
+.logo-header{ 
+    display: inline-block;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--link-text-color);
     text-decoration: none;
     
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 93px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-right: 284px;
     &__studio{
         color: var(--header-text-color);
     }
+
+    }
+
+    @media (min-width:767px) {
+        .logo-header{
+        padding-top: 26px;
+        padding-bottom: 26px;
+        font-size: 26px;
+        }
     }
         /* СТИЛИ НАВИГАЦИИ */
-.nav-nav{
+.nav-menu{
         display: flex;
         align-items: center;
     }
@@ -73,6 +89,9 @@
         border-radius: 2px;
         background-color: var(--link-text-color);
     }
+    @media (min-width:320px) and (max-width:767px) {
+        display: none;
+        }
 
     }
     /* СТИЛИ КОНТАКТОВ В HEADER */
@@ -119,20 +138,67 @@
 &__icon:focus{
 color: var(--link-text-color);
 }
+@media (min-width:320px) and (max-width:767px) {
+    display: none;
+    }
+}
+
+/* СТИЛИ МЕНЮ ТЕЛЕФОН */
+
+.open-mobile__btn{
+    display: block;
+border: none;
+background-color: rgba(0,0,0,0);
+padding: 0;
+
+@media (min-width:767px){
+    display: none;
+}
+}
+
+.nav-mobmenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    background-color: var(--background-text-color);
+}
+
+.nav-mobmenu.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-mobmenu__btn{
+    padding: 0;
+    margin-left: 436px;
+    margin-top: 21px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.mobmenu-list{
+    list-style: none;
+    margin-top: 48px;
+
+    &__item {
+        margin-bottom: 32px;
+
+    }
+    &__link {
+        text-decoration: none;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 1.17px;
+letter-spacing: 0.02em;
+color: var(--header-text-color);
+    }
 }
 
 
-
-
-
-
-
-
-
-
-/* СТИЛИ КОНТАКТОВ В HEADER */
-
-/* STYLES HEADER */
 
     
  
