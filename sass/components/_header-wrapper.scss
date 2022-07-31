@@ -26,21 +26,27 @@
     &__studio{
         color: var(--header-text-color);
     }
+    @media (max-width:767px){
+        padding-top: 26px;
+        padding-bottom: 26px;
 
     }
 
     @media (min-width:767px) {
-        .logo-header{
-        padding-top: 26px;
-        padding-bottom: 26px;
-        font-size: 26px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 88px;
         }
+
     }
+
+  
         /* СТИЛИ НАВИГАЦИИ */
 .nav-menu{
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
     }
+    
     
 .nav-list{
         display: flex;
@@ -97,11 +103,13 @@
     /* СТИЛИ КОНТАКТОВ В HEADER */
 
 .contact-list{
-    display: flex;
     padding: 0;
-    margin-left: 305px;
+    margin-left: 88px;
     margin-top: 0;
     margin-bottom: 0;
+    @media (min-width:767px){
+        margin-right: 302px;
+    }
 
     &__item{
         list-style: none;
@@ -157,12 +165,15 @@ padding: 0;
 }
 
 .nav-mobmenu{
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     opacity: 1;
     background-color: var(--background-text-color);
+    padding: 48px 40px 48px 40px;
 }
 
 .nav-mobmenu.is-hidden{
@@ -172,19 +183,28 @@ padding: 0;
 
 .nav-mobmenu__btn{
     padding: 0;
-    margin-left: 436px;
-    margin-top: 21px;
     border: none;
     background-color: rgba(0,0,0,0);
-}
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 21px;
+    margin-right: 25px;
+    fill: var(--link-text-color);
+    }
 
 .mobmenu-list{
     list-style: none;
-    margin-top: 48px;
+    margin: 0;
+    padding: 0;
+    
 
     &__item {
-        margin-bottom: 32px;
+       margin-bottom: 32px;
 
+    }
+    &__item:last-child{
+        margin-bottom: 120px;
     }
     &__link {
         text-decoration: none;
@@ -192,21 +212,84 @@ padding: 0;
 font-style: normal;
 font-weight: 500;
 font-size: 40px;
-line-height: 1.17px;
+line-height: 47px;
 letter-spacing: 0.02em;
 color: var(--header-text-color);
+    }
+    &__link:hover,
+    &__link:focus{
+color: var(--link-text-color);
+}
+&__link--current{
+color: var(--link-text-color);
+}   
+
+}
+
+.mobile-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &__item:last-child{
+        margin-bottom: 64px;
+
+    }
+    &__item{
+        margin-bottom: 32px;
+
+    }
+
+    &__link{
+        text-decoration: none;
+    }
+    &__link--tel{
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+letter-spacing: 0.02em;
+color: var(--link-text-color);
+margin-bottom: 32px;
+    }
+    &__link--mail{
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+
+color: var(--primary-text-color);
     }
 }
 
 
 
-    
- 
-    
-   
-    
-    
-    
-   
-    
-   
+
+
+
+.social-mobile-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+    display: flex;
+
+    &__item{
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22px;
+letter-spacing: 0.02em;
+color: var(--link-text-color);
+margin-right: 10px;
+
+    }
+    &__separator{
+        display: inline-block;
+        color: rgba(33,33,33,.2);
+        margin-left: 10px;
+    }
+}
