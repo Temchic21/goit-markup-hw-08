@@ -26,19 +26,13 @@
     &__studio{
         color: var(--header-text-color);
     }
-    @media (max-width:767px){
-        padding-top: 26px;
-        padding-bottom: 26px;
-
-    }
-
     @media (min-width:767px) {
-        padding-top: 24px;
-        padding-bottom: 24px;
-        margin-right: 88px;
-        }
-
+        padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
     }
+
+    } 
 
   
         /* СТИЛИ НАВИГАЦИИ */
@@ -104,12 +98,10 @@
 
 .contact-list{
     padding: 0;
-    margin-left: 88px;
     margin-top: 0;
     margin-bottom: 0;
-    @media (min-width:767px){
-        margin-right: 302px;
-    }
+    margin-left: auto;
+
 
     &__item{
         list-style: none;
@@ -132,7 +124,9 @@
         transition-timing-function: var(--timing-function);
         }
         &__link--mail{
-            margin-right: 30px;
+            margin-bottom: 10px;
+            
+           
         }
         &__link:hover,
         &__link:focus{

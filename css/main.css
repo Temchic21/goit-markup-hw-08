@@ -85,16 +85,10 @@ body {
 .logo-header__studio {
   color: var(--header-text-color);
 }
-@media (max-width: 767px) {
+@media (min-width: 767px) {
   .logo-header {
     padding-top: 26px;
     padding-bottom: 26px;
-  }
-}
-@media (min-width: 767px) {
-  .logo-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     margin-right: 88px;
   }
 }
@@ -168,14 +162,9 @@ body {
 /* СТИЛИ КОНТАКТОВ В HEADER */
 .contact-list {
   padding: 0;
-  margin-left: 88px;
   margin-top: 0;
   margin-bottom: 0;
-}
-@media (min-width: 767px) {
-  .contact-list {
-    margin-right: 302px;
-  }
+  margin-left: auto;
 }
 .contact-list__item {
   list-style: none;
@@ -208,7 +197,7 @@ body {
           transition-timing-function: var(--timing-function);
 }
 .contact-list__link--mail {
-  margin-right: 30px;
+  margin-bottom: 10px;
 }
 .contact-list__link:hover, .contact-list__link:focus {
   color: var(--link-text-color);
