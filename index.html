@@ -149,7 +149,7 @@
                 </div>
             </section>
             <!-- Секция чем занимаемся -->
-            <!-- <section class="section study">
+            <section class="section study">
                 <div class="container">
                     <h2 class="study-title">Чем мы занимаемся</h2>
                     <ul class="study-list">
@@ -167,14 +167,28 @@
                         </li>
                     </ul>     
                 </div>
-            </section>   -->
+            </section> 
             <!-- Секция наша команда -->
-            <!-- <section class="section team">
+             <section class="section team">
                 <div class="container">
                     <h3 class="team-title">Наша команда</h3>
                     <ul class="team-list">
                         <li class="team-list__item">
-                            <img class="team-list__photo" src="img/human-1.jpg" alt=" Игорь Демьяненко Product Designer" width="270" height="260">
+                            <picture>
+                                <source srcset="img/designer-mobile-min.jpg  450w, 
+                                img/designer-mobile@2x-min.jpg  900w" 
+                                media="(max-width: 767px)" sizes="(min-width: 480px) 450px, 100vw">
+                                <source srcset="imd/designer-tablet-min.jpg  354w, 
+                                imd/designer-tablet@2x-min.jpg   708w" 
+                                media="(min-width: 768px)" sizes="(min-width: 768px) 354px, 46vw">
+                                <source srcset="imd/designer.jpg   270w, 
+                                img/designer@2x-min.jpg  540w" 
+                                media="(min-width: 1200px)" sizes="(min-width: 1200px) 270px, 30vw">
+                                <img class="team-list__photo" src="img/designer-mobile-min.jpg" 
+                            alt=" Игорь Демьяненко Product Designer">
+
+                            </picture>
+                            
                             <div class="team-list__container">
                                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                                 <p class="team-list__text">Designer</p>
@@ -323,7 +337,7 @@
                         </li>
                     </ul>         
                 </div>
-            </section> -->
+            </section>
             <!-- Секция наша клиенты -->
             <!-- <section class="section clients">
                 <div class="container">

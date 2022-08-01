@@ -596,6 +596,11 @@ body {
 .study {
   padding-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .study {
+    display: none;
+  }
+}
 
 .study-title {
   font-weight: 700;
