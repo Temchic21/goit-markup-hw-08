@@ -1,3 +1,10 @@
+.maim{
+    @media (max-width:768px) {
+        margin-top: 60px;
+    } 
+}
+
+
 .hero-fon{
     max-width: 100%;
     height: auto;
@@ -11,14 +18,48 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    // @media(min-device-pixel-ratio:2),
-    // (min-resolution:2dppx),
-    // (min-resolution:192dpi) {
-    //     background-image: linear-gradient(
-    // var(--hero-fon-color),
-    // var(--hero-fon-color)),
-    // url(../img/hero-fon@2x-min.jpg);
-    // }
+    @media(min-device-pixel-ratio:2),
+    (min-resolution:2dppx),
+    (min-resolution:192dpi) {
+        background-image: linear-gradient(
+    var(--hero-fon-color),
+    var(--hero-fon-color)),
+    url(../img/hero-fon.mobile@2x-min.jpg);
+    
+    }
+    @media (min-width:768px) {
+        background-image: linear-gradient(
+            var(--hero-fon-color),
+            var(--hero-fon-color)),
+            url(../img/hero-fon-tablet-min.jpg);
+            
+            @media(min-device-pixel-ratio:2),
+            (min-resolution:2dppx),
+            (min-resolution:192dpi) {
+                background-image: linear-gradient(
+                    var(--hero-fon-color),
+                    var(--hero-fon-color)),
+                    url(../img/hero-fon-tablet@2x-min.jpg);
+
+            }
+            
+    }
+    @media (min-width:1200px) {
+        background-image: linear-gradient(
+            var(--hero-fon-color),
+            var(--hero-fon-color)),
+            url(../img/hero-fon.jpg);
+
+            @media(min-device-pixel-ratio:2),
+            (min-resolution:2dppx),
+            (min-resolution:192dpi) {
+                background-image: linear-gradient(
+                    var(--hero-fon-color),
+                    var(--hero-fon-color)),
+                    url(../img/hero-fon@2x-min.jpg);
+            }
+    }
+
 }
 
 .hero{
@@ -26,6 +67,11 @@
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
+
+    @media (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero-title{
@@ -40,6 +86,12 @@ color: var(--background-text-color);
 
 margin-top: 0;
 margin-bottom: 30px;
+
+@media (min-width:1200px) {
+    font-size: 44px;
+line-height: 1.36;
+}
+
 }
 
 .btn-hero{

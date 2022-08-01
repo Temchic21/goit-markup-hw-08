@@ -57,15 +57,23 @@ body {
   margin: 0 auto;
 }
 
-.header-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-  display: block;
-  background-color: var(--background-text-color);
-  border-bottom: 1px solid var(--border-solid-colot);
+@media (max-width: 767px) {
+  .header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    display: block;
+    background-color: var(--background-text-color);
+    border-bottom: 1px solid var(--border-solid-colot);
+  }
+}
+@media (min-width: 768px) {
+  .header-wrapper {
+    background-color: var(--background-text-color);
+    border-bottom: 1px solid var(--border-solid-colot);
+  }
 }
 
 .logo-header {
@@ -371,6 +379,12 @@ body {
   margin-left: 10px;
 }
 
+@media (max-width: 768px) {
+  .maim {
+    margin-top: 60px;
+  }
+}
+
 .hero-fon {
   max-width: 100%;
   height: auto;
@@ -382,12 +396,48 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero-fon {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-fon-color)), to(var(--hero-fon-color))), url(../img/hero-fon.mobile@2x-min.jpg);
+    background-image: linear-gradient(var(--hero-fon-color), var(--hero-fon-color)), url(../img/hero-fon.mobile@2x-min.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .hero-fon {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-fon-color)), to(var(--hero-fon-color))), url(../img/hero-fon-tablet-min.jpg);
+    background-image: linear-gradient(var(--hero-fon-color), var(--hero-fon-color)), url(../img/hero-fon-tablet-min.jpg);
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero-fon {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-fon-color)), to(var(--hero-fon-color))), url(../img/hero-fon-tablet@2x-min.jpg);
+    background-image: linear-gradient(var(--hero-fon-color), var(--hero-fon-color)), url(../img/hero-fon-tablet@2x-min.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .hero-fon {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-fon-color)), to(var(--hero-fon-color))), url(../img/hero-fon.jpg);
+    background-image: linear-gradient(var(--hero-fon-color), var(--hero-fon-color)), url(../img/hero-fon.jpg);
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .hero-fon {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--hero-fon-color)), to(var(--hero-fon-color))), url(../img/hero-fon@2x-min.jpg);
+    background-image: linear-gradient(var(--hero-fon-color), var(--hero-fon-color)), url(../img/hero-fon@2x-min.jpg);
+  }
+}
 
 .hero {
   background-color: var(--header-text-color);
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero-title {
@@ -401,6 +451,12 @@ body {
   color: var(--background-text-color);
   margin-top: 0;
   margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .btn-hero {
