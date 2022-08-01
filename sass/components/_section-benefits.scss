@@ -1,28 +1,71 @@
 .benefits{
     background-color: var(--background-text-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     }
     
 .benefits-list{
         list-style-type: none;
-        margin-top: 0;
+        margin: 0;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 0;
+
+        @media (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
         &__item{
-            margin-top: 0;
-            margin-bottom: 10px;
+            max-width: 450px;
+          
         }
+
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            &__item:not(:last-child) {
+                margin-bottom: 30px;
+
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            &__item:nth-child(odd) {
+                margin-right: 30px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            &__item:not(:nth-last-child(-n+2)) {
+                margin-bottom: 30px;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            &__item{
+                width: calc( (100% - 30px) /2);
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            &__item:not(:last-child) {
+                margin-right: 30px;
+            }
+            @media screen and (min-width: 1200px) {
+                &__item{
+                    width: calc( (100% - 90px) /4);
+                }
+
+            }
+
+        }
+
+
         &__container{
             display: flex;
             justify-content: center;
             align-items: center;
         
             background-color: var(--benefis-background-color);
-            width: 270px;
+            width: 100%;
             height: 120px;
         
             border-radius: 4px;
@@ -42,6 +85,16 @@
             margin: 0;
             margin-bottom: 10px;
             }
+
+            @media screen and (max-width: 767px) {
+                &__title{
+                    text-align: center;
+                }
+            }
+
+
+
+
             &__text{
                 font-family: 'Roboto';
                 font-style: normal;
@@ -51,12 +104,7 @@
                 color: var(--primary-text-color);
                 margin-top: 0;
                 margin-bottom: 0;
-                width: 270px;
-                height: 75px;
                 }
-
-
-
     }
     
     
