@@ -92,6 +92,11 @@ body {
     margin-right: 88px;
   }
 }
+@media (min-width: 1200px) {
+  .logo-header {
+    margin-right: 93px;
+  }
+}
 
 /* СТИЛИ НАВИГАЦИИ */
 .nav-menu {
@@ -166,6 +171,14 @@ body {
   margin-bottom: 0;
   margin-left: auto;
 }
+@media (min-width: 1200px) {
+  .contact-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 305px;
+  }
+}
 .contact-list__item {
   list-style: none;
 }
@@ -198,6 +211,16 @@ body {
 }
 .contact-list__link--mail {
   margin-bottom: 10px;
+}
+@media (min-width: 1200px) {
+  .contact-list__link--mail {
+    margin-right: 30px;
+  }
+}
+.contact-list__link--tel {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .contact-list__link:hover, .contact-list__link:focus {
   color: var(--link-text-color);
