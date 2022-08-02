@@ -57,6 +57,12 @@ body {
   margin: 0 auto;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (max-width: 767px) {
   .header-wrapper {
     position: fixed;
@@ -1114,6 +1120,17 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-flat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .footer-address {
@@ -1194,6 +1211,11 @@ body {
           align-items: center;
   width: 206px;
   height: 80px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-top: 12px;
+  }
 }
 .footer-social__text {
   font-family: "Roboto";
@@ -1307,13 +1329,20 @@ body {
   border: 1px solid var(--subscription-form-input-color);
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .subscription-form__input {
+    margin-right: 12px;
+    min-width: 358px;
+  }
+}
 .subscription-form__input:focus {
   outline: var(--background-footer-color);
 }
-.subscription-form__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+
+.footer-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1344,14 +1373,16 @@ body {
   -webkit-transition-timing-function: var(--timing-function);
           transition-timing-function: var(--timing-function);
 }
-.subscription-form__btn:hover, .subscription-form__btn:focus {
-  background-color: var(--change-text-color);
-}
-.subscription-form__icon {
+.footer-button__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
   fill: var(--background-text-color);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--change-text-color);
 }
 
 .backdrop {

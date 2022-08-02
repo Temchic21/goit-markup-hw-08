@@ -10,6 +10,11 @@
 @media screen and (max-width: 1199px) {
     text-align: center;
 }
+@media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
     }
 
     .footer-address{
@@ -86,6 +91,9 @@
             align-items: center;
             width: 206px;
             height: 80px;
+            @media screen and (min-width: 768px){
+                margin-top: 12px;
+            }
         
 
             &__text{
@@ -182,6 +190,11 @@ color: var(--background-text-color);
         padding: 0;
         padding-left: 16px;
         margin-bottom: 20px;
+
+        @media screen and (min-width: 1200px){
+            margin-right: 12px;
+    min-width: 358px;
+        }
     
         font-family: 'Roboto';
     font-style: normal;
@@ -196,8 +209,11 @@ color: var(--background-text-color);
     &__input:focus{
         outline:var(--background-footer-color);
     }
-    &__btn{
-        display: flex;
+    
+}
+
+.footer-button{
+    display:inline-flex;
         align-items: center;
         justify-content: center;
         width: 200px;
@@ -219,21 +235,19 @@ color: var(--background-text-color);
    transition-property: var(--link-text-color), transform;
    transition-duration:250ms;
    transition-timing-function: var(--timing-function);
-   
-   }
-   &__btn:hover,
-&__btn:focus{
-    background-color: var(--change-text-color);
-}
-&__icon{
+
+   &__icon{
     width: 24px;
     height: 24px;
     margin-left: 10px;
     fill: var(--background-text-color);
 }
-    
 }
 
+.footer-button:hover,
+.footer-button:focus{
+    background-color:var(--change-text-color);
+}
 
 
 
