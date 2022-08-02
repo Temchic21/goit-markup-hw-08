@@ -1,12 +1,20 @@
 /* СТИЛИ МЕНЮ КНОПОК */
 
 .main-wrap{
-    margin-top: 60px;
+    @media screen and (max-width: 767px){
+        margin-top: 60px;
+    }
+    
 }
 
 .positions{
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 }
 .positions-list{
     list-style-type: none;
@@ -72,9 +80,13 @@ background: var(--link-text-color);
 
     @media screen and (min-width: 768px){
         display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     }
+    @media screen and (min-width: 1199px){
+        justify-content: center;
+
+    }
+
 
     &__item{
         background:var(--background-text-color);
@@ -188,6 +200,9 @@ background: var(--link-text-color);
         line-height: 2.00;
         letter-spacing: 0.06em;
         color:var(--header-text-color);
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         
         
         margin-top: 0px;

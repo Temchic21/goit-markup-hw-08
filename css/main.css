@@ -955,13 +955,21 @@ body {
 }
 
 /* СТИЛИ МЕНЮ КНОПОК */
-.main-wrap {
-  margin-top: 60px;
+@media screen and (max-width: 767px) {
+  .main-wrap {
+    margin-top: 60px;
+  }
 }
 
 .positions {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .positions {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .positions-list {
@@ -1043,11 +1051,15 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .pictures-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 .pictures-list__item {
@@ -1162,6 +1174,9 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-text-color);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   margin-top: 0px;
   margin-bottom: 4px;
 }
