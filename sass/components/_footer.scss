@@ -6,7 +6,16 @@
     }
     
     .footer-flat{
-        display: flex;
+        
+@media screen and (max-width: 1199px) {
+    text-align: center;
+}
+    }
+
+    .footer-address{
+        @media screen and (max-width: 1199px){
+            margin-bottom: 60px;
+        }
     }
 
     .footer-logo{
@@ -77,8 +86,7 @@
             align-items: center;
             width: 206px;
             height: 80px;
-            margin-left: 70px;
-            margin-top: 12px;
+        
 
             &__text{
                 font-family: 'Roboto';
@@ -91,8 +99,18 @@
                 color: var(--background-text-color);
             
                 margin-top: 0;
-                margin-bottom: 20px;
+            
             }
+            @media screen and (max-width: 1199px){
+                margin-bottom: 60px;
+            }
+            @media screen and (min-width: 1200px){
+                margin-bottom: 20px;
+                margin-left: 70px;
+            margin-top: 12px;
+
+            }
+
         
         }
           
@@ -135,9 +153,10 @@
         }
         
         .footer-right-block{
-   margin-left: 93px;
-   margin-top: 12px;
    color: var(--background-text-color);
+   @media screen and (min-width: 480px) and (max-width: 1199px){
+    min-width: 450px;
+   }
 }
 
 .footer-text{
@@ -148,7 +167,7 @@ font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
-line-height: 16px;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;  
 color: var(--background-text-color);
@@ -156,17 +175,13 @@ color: var(--background-text-color);
 
 
 .subscription-form{
-    display: flex;
-    align-items: center;
 
     &__input{
-        display: flex;
-        align-items: center;
-        min-width: 358px;
+        min-width:100%;
         height: 50px;
         padding: 0;
         padding-left: 16px;
-        margin-right: 12px;
+        margin-bottom: 20px;
     
         font-family: 'Roboto';
     font-style: normal;
