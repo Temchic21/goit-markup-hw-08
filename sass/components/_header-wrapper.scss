@@ -194,6 +194,10 @@ padding: 0;
     opacity: 1;
     background-color: var(--background-text-color);
     padding: 48px 40px 48px 40px;
+
+    @media (min-width:767px){
+        display: none;
+    }
 }
 
 .nav-mobmenu.is-hidden{
@@ -286,10 +290,6 @@ color: var(--primary-text-color);
 }
 
 
-
-
-
-
 .social-mobile-list{
     list-style: none;
     padding: 0;
@@ -305,8 +305,13 @@ line-height: 1.22px;
 letter-spacing: 0.02em;
 color: var(--link-text-color);
 margin-right: 10px;
-
     }
+
+    &__item:last-child{
+        margin-right: 0;
+    }
+
+
     &__separator{
         display: inline-block;
         color: rgba(33,33,33,.2);

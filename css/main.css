@@ -282,6 +282,11 @@ img {
   background-color: var(--background-text-color);
   padding: 48px 40px 48px 40px;
 }
+@media (min-width: 767px) {
+  .nav-mobmenu {
+    display: none;
+  }
+}
 
 .nav-mobmenu.is-hidden {
   opacity: 0;
@@ -379,6 +384,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--link-text-color);
   margin-right: 10px;
+}
+.social-mobile-list__item:last-child {
+  margin-right: 0;
 }
 .social-mobile-list__separator {
   display: inline-block;
