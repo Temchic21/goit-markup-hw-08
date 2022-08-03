@@ -30,7 +30,7 @@
     
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-right: 284px;
+    
     &__studio{
         color: var(--header-text-color);
     }
@@ -172,7 +172,9 @@ color: var(--link-text-color);
 /* СТИЛИ МЕНЮ ТЕЛЕФОН */
 
 .open-mobile__btn{
-    display: block;
+    display: inline-block;
+    justify-self: end;
+    margin-left: auto;
 border: none;
 background-color: rgba(0,0,0,0);
 padding: 0;
@@ -222,7 +224,7 @@ padding: 0;
 
     }
     &__item:last-child{
-        margin-bottom: 120px;
+        margin-bottom: 302px;
     }
     &__link {
         text-decoration: none;
