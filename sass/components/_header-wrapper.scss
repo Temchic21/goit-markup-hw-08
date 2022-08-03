@@ -255,10 +255,7 @@ color: var(--link-text-color);
     padding: 0;
     margin: 0;
 
-    &__item:last-child{
-        margin-bottom: 64px;
-
-    }
+   
     &__item{
         margin-bottom: 32px;
 
@@ -297,6 +294,19 @@ color: var(--primary-text-color);
     display: flex;
 
     &__item{
+        margin-right: 10px;
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    &__item:last-child{
+        margin-right: 0;
+        border-right: none;
+        padding-right: 0;
+    }
+
+
+
+    &__link{
         font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -304,17 +314,7 @@ font-size: 18px;
 line-height: 1.22px;
 letter-spacing: 0.02em;
 color: var(--link-text-color);
-margin-right: 10px;
-    }
-
-    &__item:last-child{
-        margin-right: 0;
     }
 
 
-    &__separator{
-        display: inline-block;
-        color: rgba(33,33,33,.2);
-        margin-left: 10px;
-    }
 }

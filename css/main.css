@@ -338,9 +338,6 @@ img {
   padding: 0;
   margin: 0;
 }
-.mobile-list__item:last-child {
-  margin-bottom: 64px;
-}
 .mobile-list__item {
   margin-bottom: 32px;
 }
@@ -376,6 +373,16 @@ img {
   display: flex;
 }
 .social-mobile-list__item {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.social-mobile-list__item:last-child {
+  margin-right: 0;
+  border-right: none;
+  padding-right: 0;
+}
+.social-mobile-list__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -383,15 +390,6 @@ img {
   line-height: 1.22px;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
-  margin-right: 10px;
-}
-.social-mobile-list__item:last-child {
-  margin-right: 0;
-}
-.social-mobile-list__separator {
-  display: inline-block;
-  color: rgba(33, 33, 33, 0.2);
-  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
