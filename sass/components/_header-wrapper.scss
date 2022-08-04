@@ -188,10 +188,13 @@ padding: 0;
     display: flex;
     flex-direction: column;
     position: absolute;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 100vh;
     opacity: 1;
+    
     background-color: var(--background-text-color);
     padding: 48px 40px 48px 40px;
 
@@ -228,7 +231,7 @@ padding: 0;
 
     }
     &__item:last-child{
-        margin-bottom: 152px;
+        margin-bottom: auto;
     }
     &__link {
         text-decoration: none;

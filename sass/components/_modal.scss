@@ -195,9 +195,16 @@ transition-timing-function: var(--timing-function);
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height:1.16;
+
+@media screen and (min-width: 1200px){
+    font-size: 14px;
+line-height:1.71;
 letter-spacing: 0.03em;
+
+}
+
 
 color: var(--primary-text-color);
 
